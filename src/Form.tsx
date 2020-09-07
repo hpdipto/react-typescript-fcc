@@ -16,15 +16,20 @@ export default function Form(props: IProps) {
 		email: "hpdipto@yahoo.com",
 	});
 
-	console.log(state);
-
 	const { text } = props;
 	const { name } = state;
+
+	const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
+		const { name, value }: any = e.target;
+		setState({ ...state, [name]: value });
+	};
 
 	return (
 		<div>
 			<div>{text}</div>
 			<div>{name}</div>
+
+			<input name="name" value={name} onChange={handleChange} />
 		</div>
 	);
 }
