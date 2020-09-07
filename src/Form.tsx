@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { omit } from "lodash";
 
 interface IProps {
 	text: string;
@@ -16,7 +17,7 @@ export default function Form(props: IProps) {
 		email: "hpdipto@yahoo.com",
 	});
 
-	const { text } = props;
+	const { text } = omit(props, "age");
 	const { name } = state;
 
 	const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
