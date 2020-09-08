@@ -1,6 +1,6 @@
 # React TypeScript
 
-The source code of this repository is taken from Ben Awad's [How to use TypeScript in React](https://www.youtube.com/watch?v=dy9gr94s6ZY) video which is actually published from freeCodeCamp.
+The source code of this repository is taken from freeCodeCamp's [How to use TypeScript in React](https://www.youtube.com/watch?v=dy9gr94s6ZY) video.
 
 Its a small tutorial but I liked this as a beginner level TypeScript coder. May be I would come back to this repository again for reference.
 
